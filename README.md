@@ -64,3 +64,15 @@ while IFS= read -r line; do
         echo "->$line";
 done < <(cat $0 |head -n 5)
 ```
+
+
+```
+echo -e "loop with index\n"
+
+max=10
+
+for ((i=0; i<=max; i++)); do
+   echo "$i"
+done
+
+````
