@@ -28,7 +28,7 @@ echo "count = ${#tokens[@]}"
 
 echo -e "\n* Map "
 
-# Maps
+## Maps
 
 declare -A amap=( ["one"]="1" ["two"]="2" )
 
