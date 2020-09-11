@@ -56,7 +56,7 @@ for name in "${!amap[@]}"; do
 done
 
 
-# Read Command Output line by line to while loop
+## Read Command Output line by line to while loop
 
 echo -e "\n** cat first 5 lines of this file line by line"
 
