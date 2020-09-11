@@ -65,7 +65,7 @@ while IFS= read -r line; do
 done < <(cat $0 |head -n 5)
 ```
 
-# Loop with index
+## Loop with index
 ```
 echo -e "loop with index\n"
 
