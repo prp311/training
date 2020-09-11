@@ -3,35 +3,35 @@
 #!/bin/bash
 
 ## Array Example
-
+```
 declare -a tokens=( "one" "two" "three" )
 
 echo "arry contents: ${tokens[@]}"
-
+```
 ## adding elements
-
+```
 tokens+=( "four" )
-
+```
 ## deleting element
-
+```
 unset 'tokens[2]'
-
+```
 ## Looping through array
-
+```
 for token in "${tokens[@]}"; do
         echo "  element: $token"
 done
-
+```
 ## Number of elements in array
-
+```
 echo "count = ${#tokens[@]}"
 
 echo -e "\n* Map "
-
+```
 ## Maps
-
-`declare -A amap=( ["one"]="1" ["two"]="2" )`
-
+```
+declare -A amap=( ["one"]="1" ["two"]="2" )
+```
 ## add element
 ```
 amap["three"]="3"
@@ -48,9 +48,9 @@ echo -e "\n** Values of Map"
 echo "values: ${amap[@]}"
 ```
 ## loop through map
-
-echo -e "\n** Looping Map"
 ```
+echo -e "\n** Looping Map"
+
 for name in "${!amap[@]}"; do
         printf "%-5s -> %-5s\n" "$name" "${amap[$name]}";
 done
